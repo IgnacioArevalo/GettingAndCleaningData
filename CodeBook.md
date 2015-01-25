@@ -1,5 +1,4 @@
 CODEBOOK
-
 This is a codebook to help anyone understand how the data set is created.
 
 PART 1: MERGE THE TRAINING AND DATA SETS TO CREATE ONE DATA SET
