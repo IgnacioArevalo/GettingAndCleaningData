@@ -17,7 +17,7 @@ In order to change activities' numbers for its names, each activity name is assi
 
 ###PART 4: LABEL THE DATA SET WITH DESCRIPTIVE VARIABLE NAMES
 
-According to chapter "Editing text variables" (week 4), names of variables should be all lower case when possible, descriptive (Diagnosis versus Dx), not duplicated and not have underscores or dots or white spaces. Thus, all whites spaces, dashes, parenthesis, etc. have been removed using "gsub". Also full names have been added ("Accelerometer" instead of "Acc", "Gyroscope" instead of "Gyro" and so forth).
+According to chapter "Editing text variables" (week 4), names of variables should be all lower case when possible, descriptive (Diagnosis versus Dx), not duplicated and not have underscores or dots or white spaces. Thus, all white spaces, dashes, parenthesis, etc. have been removed using "gsub". Also full names have been added ("Accelerometer" instead of "Acc", "Gyroscope" instead of "Gyro" and so forth).
 
 ###PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
 
