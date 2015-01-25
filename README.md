@@ -1,8 +1,8 @@
-# Getting And Cleaning Data Course Project
+#GETTING AND CLEANING DATA COURSE PROJECT
 
 ##DATA CLEANING-UP
 
-PART 1: MERGE THE TRAINING AND DATA SETS TO CREATE ONE DATA SET
+###PART 1: MERGE THE TRAINING AND DATA SETS TO CREATE ONE DATA SET
 
 The first step to work with the data is reading the data from the folder we have the data in, creating separated data sets for training and test data (x,y and subject), features and activities.
 Once this has been done, the next step is to bind training and test data into one single data set and naming each column with its corresponding variable name.
