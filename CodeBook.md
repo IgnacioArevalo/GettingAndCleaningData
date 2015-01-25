@@ -1,1 +1,3 @@
-This is a codebook to understand how the tidy data set is created
+This is a codebook to understand to help anyone understand how the data set is created.
+
+
