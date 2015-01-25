@@ -1,14 +1,13 @@
 # Getting And Cleaning Data Course Project
 
 The following script allows the user to extract, clean and tidy the required data
-
 library(dplyr)
 library(tidyr)
 
-# Set the working directory 
+#Set the working directory 
 setwd("C:/Users/Nacho/Desktop/Johns Hopkins Data Science")
 
-# Read train, test, features and activity data
+#Read train, test, features and activity data
 xtrain<-read.table("UCI HAR Dataset/train/X_train.txt")
 xtest<-read.table("UCI HAR Dataset/test/X_test.txt")
 ytrain<-read.table("UCI HAR Dataset/train/y_train.txt")
@@ -19,7 +18,7 @@ features<-read.table("UCI HAR Dataset/features.txt")
 activity<-read.table("UCI HAR Dataset/activity_labels.txt")
 
 # PART 1: MERGE THE TRAINING AND DATA SETS TO CREATE ONE DATA SET
-x<-rbind(xtrain,xtest) 
+x<-rbind(xtrain,xtest)
 colnames(x)<-features[,2]
 y<-rbind(ytrain,ytest)
 colnames(y)<-"Activity"
