@@ -141,93 +141,181 @@ In order to change activities' numbers for its names, each activity name is assi
 
 According to chapter "Editing text variables" (week 4), names of variables should be all lower case when possible, descriptive (Diagnosis versus Dx), not duplicated and not have underscores or dots or white spaces. Thus, all white spaces, dashes, parenthesis, etc. have been removed using "gsub". Also full names have been added ("Accelerometer" instead of "Acc", "Gyroscope" instead of "Gyro" and so forth).
 
- [1] "tBodyAccelerometerMeanX"                         
+ [1] "tBodyAccelerometerMeanX"      
+ 
+ 
  [2] "tBodyAccelerometerMeanY"                         
+ 
  [3] "tBodyAccelerometerMeanZ"                         
+ 
  [4] "tBodyAccelerometerStandardDeviationX"            
+ 
  [5] "tBodyAccelerometerStandardDeviationY"            
+ 
  [6] "tBodyAccelerometerStandardDeviationZ"            
+ 
  [7] "tGravityAccelerometerMeanX"                      
+ 
  [8] "tGravityAccelerometerMeanY"                      
+ 
  [9] "tGravityAccelerometerMeanZ"                      
+
 [10] "tGravityAccelerometerStandardDeviationX"         
+
 [11] "tGravityAccelerometerStandardDeviationY"         
+
 [12] "tGravityAccelerometerStandardDeviationZ"         
+
 [13] "tBodyAccelerometerJerkMeanX"                     
+
 [14] "tBodyAccelerometerJerkMeanY"                     
+
 [15] "tBodyAccelerometerJerkMeanZ"                     
+
 [16] "tBodyAccelerometerJerkStandardDeviationX"        
+
 [17] "tBodyAccelerometerJerkStandardDeviationY"        
+
 [18] "tBodyAccelerometerJerkStandardDeviationZ"        
+
 [19] "tBodyGyroscopeMeanX"                             
+
 [20] "tBodyGyroscopeMeanY"                             
+
 [21] "tBodyGyroscopeMeanZ"                             
+
 [22] "tBodyGyroscopeStandardDeviationX"                
+
 [23] "tBodyGyroscopeStandardDeviationY"                
+
 [24] "tBodyGyroscopeStandardDeviationZ"                
+
 [25] "tBodyGyroscopeJerkMeanX"                         
+
 [26] "tBodyGyroscopeJerkMeanY"                         
+
 [27] "tBodyGyroscopeJerkMeanZ"                         
+
 [28] "tBodyGyroscopeJerkStandardDeviationX"            
+
 [29] "tBodyGyroscopeJerkStandardDeviationY"            
+
 [30] "tBodyGyroscopeJerkStandardDeviationZ"            
+
 [31] "tBodyAccelerometerMagnitudeMean"                 
+
 [32] "tBodyAccelerometerMagnitudeStandardDeviation"    
+
 [33] "tGravityAccelerometerMagnitudeMean"              
+
 [34] "tGravityAccelerometerMagnitudeStandardDeviation" 
+
 [35] "tBodyAccelerometerJerkMagnitudeMean"             
+
 [36] "tBodyAccelerometerJerkMagnitudeStandardDeviation"
+
 [37] "tBodyGyroscopeMagnitudeMean"                     
+
 [38] "tBodyGyroscopeMagnitudeStandardDeviation"        
+
 [39] "tBodyGyroscopeJerkMagnitudeMean"                 
+
 [40] "tBodyGyroscopeJerkMagnitudeStandardDeviation"    
+
 [41] "fBodyAccelerometerMeanX"                         
+
 [42] "fBodyAccelerometerMeanY"                         
+
 [43] "fBodyAccelerometerMeanZ"                         
+
 [44] "fBodyAccelerometerStandardDeviationX"            
+
 [45] "fBodyAccelerometerStandardDeviationY"            
+
 [46] "fBodyAccelerometerStandardDeviationZ"            
+
 [47] "fBodyAccelerometerMeanFreqX"                     
+
 [48] "fBodyAccelerometerMeanFreqY"                     
+
 [49] "fBodyAccelerometerMeanFreqZ"                     
+
 [50] "fBodyAccelerometerJerkMeanX"                     
+
 [51] "fBodyAccelerometerJerkMeanY"                     
+
 [52] "fBodyAccelerometerJerkMeanZ"                     
+
 [53] "fBodyAccelerometerJerkStandardDeviationX"        
+
 [54] "fBodyAccelerometerJerkStandardDeviationY"        
+
 [55] "fBodyAccelerometerJerkStandardDeviationZ"        
+
 [56] "fBodyAccelerometerJerkMeanFreqX"                 
+
 [57] "fBodyAccelerometerJerkMeanFreqY"                 
+
 [58] "fBodyAccelerometerJerkMeanFreqZ"                 
+
 [59] "fBodyGyroscopeMeanX"                             
+
 [60] "fBodyGyroscopeMeanY"                             
+
 [61] "fBodyGyroscopeMeanZ"                             
+
 [62] "fBodyGyroscopeStandardDeviationX"                
+
 [63] "fBodyGyroscopeStandardDeviationY"                
+
 [64] "fBodyGyroscopeStandardDeviationZ"                
+
 [65] "fBodyGyroscopeMeanFreqX"                         
+
 [66] "fBodyGyroscopeMeanFreqY"                         
+
 [67] "fBodyGyroscopeMeanFreqZ"                         
+
 [68] "fBodyAccelerometerMagnitudeMean"                 
+
 [69] "fBodyAccelerometerMagnitudeStandardDeviation"    
+
 [70] "fBodyAccelerometerMagnitudeMeanFreq"             
+
 [71] "fBodyAccelerometerJerkMagnitudeMean"             
+
 [72] "fBodyAccelerometerJerkMagnitudeStandardDeviation"
+
 [73] "fBodyAccelerometerJerkMagnitudeMeanFreq"         
+
 [74] "fBodyGyroscopeMagnitudeMean"                     
+
 [75] "fBodyGyroscopeMagnitudeStandardDeviation"        
+
 [76] "fBodyGyroscopeMagnitudeMeanFreq"                 
+
 [77] "fBodyGyroscopeJerkMagnitudeMean"                 
+
 [78] "fBodyGyroscopeJerkMagnitudeStandardDeviation"    
+
 [79] "fBodyGyroscopeJerkMagnitudeMeanFreq"             
+
 [80] "Angle(tBodyAccelerometerMean,Gravity)"           
+
 [81] "Angle(tBodyAccelerometerJerkMean),GravityMean)"  
+
 [82] "Angle(tBodyGyroscopeMean,GravityMean)"           
+
 [83] "Angle(tBodyGyroscopeJerkMean,GravityMean)"       
+
 [84] "Angle(X,GravityMean)"                            
+
 [85] "Angle(Y,GravityMean)"                            
+
 [86] "Angle(Z,GravityMean)"                            
+
 [87] "Activity"                                        
+
 [88] "Subject"  
 
 ###PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
