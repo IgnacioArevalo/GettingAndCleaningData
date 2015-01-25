@@ -1,6 +1,6 @@
 # Getting And Cleaning Data Course Project
 
-# The following script allows the user to extract, clean and tidy the required data
+The following script allows the user to extract, clean and tidy the required data
 
 library(dplyr)
 library(tidyr)
@@ -60,8 +60,7 @@ colnames(data)<-gsub("tGravity","t Gravity ",colnames(data),fixed=TRUE)
 colnames(data)<-gsub("tBody","t Body",colnames(data),fixed=TRUE)
 colnames(data)<-gsub("fBody","f Body",colnames(data),fixed=TRUE)
 
-# PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE
-#         FOR EACH ACTIVITY AND EACH SUBJECT
+# PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
 tidy<-group_by(data,Subject,Activity)
 tidy<-summarise_each(tidy,funs(mean))
 write.table(tidy,file="TidyData.txt",row.names=FALSE)
