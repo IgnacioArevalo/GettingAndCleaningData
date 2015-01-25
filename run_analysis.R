@@ -1,8 +1,8 @@
-library(dplyr)
-library(tidyr)
-
 # Set the working directory 
 setwd("C:/Users/Nacho/Desktop/Johns Hopkins Data Science")
+
+# Call dplyr
+library(dplyr)
 
 # Read train, test, features and activity data
 xtrain<-read.table("UCI HAR Dataset/train/X_train.txt")
@@ -31,7 +31,7 @@ x<-x[,columns_mean_std]
 # PART 3: USE DESCRIPTIVE VARIABLE NAMES TO NAME THE ACTIVITIES ON THE DATA SET
 y[y==1]="Walking"
 y[y==2]="Walking Upstairs"
-y[y==3]="Walking downstairs"
+y[y==3]="Walking Downstairs"
 y[y==4]="Sitting"
 y[y==5]="Standing"
 y[y==6]="Laying"       
@@ -56,7 +56,8 @@ colnames(data)<-gsub("tGravity","t Gravity ",colnames(data),fixed=TRUE)
 colnames(data)<-gsub("tBody","t Body",colnames(data),fixed=TRUE)
 colnames(data)<-gsub("fBody","f Body",colnames(data),fixed=TRUE)
 
-# PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
+# PART 5: CREATE AN INDEPENDENT TIDY DATA SET WITH THE AVERAGE OF EACH VARIABLE
+#         FOR EACH ACTIVITY AND EACH SUBJECT
 tidy<-group_by(data,Subject,Activity)
 tidy<-summarise_each(tidy,funs(mean))
 write.table(tidy,file="TidyData.txt",row.names=FALSE)
