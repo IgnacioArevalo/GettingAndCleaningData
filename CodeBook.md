@@ -322,6 +322,6 @@ According to chapter "Editing text variables" (week 4), names of variables shoul
 
 First, the data set is sorted by subject and by activity using "group by". Then, the average for each variable is calculated and the data set is summarised using "summarise each".
 
-Finally, the data set is written to a txt.file using "write.table"
+Finally, the data set is written to a *.txt file using "write.table"
 
 The values given in the table correspond to the average value for each variable, subject and activity
