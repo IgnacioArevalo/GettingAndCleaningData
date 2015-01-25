@@ -324,4 +324,4 @@ First, the data set is sorted by subject and by activity using "group by". Then,
 
 Finally, the data set is written to a *.txt file using "write.table"
 
-The values given in the table correspond to the average value for each variable, subject and activity
+The names of the variables remain the same as in the original data set but the values given in the table correspond to the average value for each variable, subject and activity
